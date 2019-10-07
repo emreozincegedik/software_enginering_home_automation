@@ -1,0 +1,11 @@
+Arduino Mega
+A to B male USB (Uploading code and testing, it will be removed after finishing)
+128x64 OLED screen
+4 channel 5v relay
+Lamps x2
+Water sensor
+Water pump
+Voltage sensor
+Breadboard voltage supply
+Bluetooth module (HC-05)
+9V battery
