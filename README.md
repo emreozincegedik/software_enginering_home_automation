@@ -2,7 +2,7 @@
 
 This is a home automation project for Toros Universitesi
 
-Currently it is planned to:
+Currently it is planned to do:
 
 - Change 2 lamps remotely by phone, timed or manually from wall
 - Automatically water plants according to their humidity
