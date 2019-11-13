@@ -1,0 +1,41 @@
+17.9.19 schematics
+easyeda.com drawed wire schematics
+
+19.9.19 libraries
+"Wire.h" sda scl communication enabler
+"RTClib.h" ds3231 module timer
+<Adafruit_SSD1306.h> OLED screen
+no bluetooth library (serial communication)
+no soil moisture library (analog read)
+no lamp library (analog read)
+
+20.9.19 algorithm
+Arduino pulls time from DS3231 with RTClib library and writes to screen
+Arduino reads soil moisture sensor from analog pin A13, 
+  if the received signal is low, pin 53 will be opened and relay will power water pump.
+  Once the moisture sensor sends high signal, pin 53 will be closed and water pump will stop.
+  Water level will be shown in both OLED screen and phone via bluetooth module
+Arduino reads electricty status from analog pin A0, 
+  if electricity stops, Arduino takes note of current time with DS3231 module, counts how much time passed between the electricty stop
+  and electricty becoming available. Shows the process on screen and phone
+Arduino reads lamp status and shows on screen and phone. Phone sends signal to arduino and arduino opens or closes the specified lamp
+
+25.9.19 Interface design
+How it will be look on OLED screen and phone are designed with Windows' Paint program
+
+26.9.19 Summary
+In short, this part is not coding but making short way for how coding logic will look like
+  also how interface will look like
+
+27.9.19 Wiring Components
+Photo
+
+1.10.19-8.10.19
+Exams, delayed
+
+9.10.19-13.10.19
+Lamps status only
+soil moisture and water pump
+time and screen
+//todo
+electricity, bluetooth communication, opening and closing lamps
