@@ -9,3 +9,4 @@ Voltage sensor
 Breadboard voltage supply
 Bluetooth module (HC-05)
 9V battery
+Breadboard
