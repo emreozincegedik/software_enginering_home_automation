@@ -1,8 +1,6 @@
 #define moisture_pin A13
 #define water_pump 53
-
 void setup() {
-  // put your setup code here, to run once:
 pinMode(moisture_pin, INPUT);
 pinMode(water_pump, OUTPUT);
 digitalWrite(water_pump, LOW);

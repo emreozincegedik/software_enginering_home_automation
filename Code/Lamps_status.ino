@@ -8,7 +8,6 @@ void setup(){
 void loop(){
   int lamp1_status = analogRead(lamp1_read); //0-1023
   int lamp2_status = analogRead(lamp2_read);
-
   if (lamp1_status>600)
   {
     Serial.println("Lamp1: On")
@@ -17,7 +16,6 @@ void loop(){
   {
     Serial.println("Lamp1: Off")
   }
-
   if (lamp2_status>600)
   {
     Serial.println("Lamp2: On")
@@ -26,6 +24,4 @@ void loop(){
   {
     Serial.println("Lamp2: Off")
   }
-  
-  
 }
