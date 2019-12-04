@@ -244,8 +244,9 @@ void loop () {
               digitalWrite(lamp2_pin2,LOW);
             }              
         }
-       }
-       if(state==52)
+      }
+      
+      if(state==52)
       {
         if(analogRead(lamp2_input)<300){ }
         else
