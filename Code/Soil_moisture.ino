@@ -6,7 +6,7 @@ pinMode(water_pump, OUTPUT);
 digitalWrite(water_pump, LOW);
 Serial.begin(9600);
 }
-char level[];
+String level;
 void loop() {
   int moisture=analogRead(moisture_pin); //moisture is 0-1023
 
